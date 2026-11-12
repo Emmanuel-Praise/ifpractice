@@ -4,19 +4,35 @@ def get_marks():
 
 score = get_marks()
 
-if 50 <= score < 60:
-    print("Grade = C")
-elif 60 <= score < 70:
-    print("Grade = B")
-elif 70 <= score < 80:
-    print("Grade = B+")
+if score >= 90:
+    grade = "A+"
 elif score >= 80:
-    print("Grade = A")
+    grade = "A"
+elif score >= 70:
+    grade = "B"
+elif score >= 65:
+    grade = "C+"
+elif score >= 50:
+    grade = "D"
+elif score >= 40:
+    grade = "E"
 else:
+<<<<<<< HEAD
     print("Grade = D")
+=======
+    grade = "F"
+
+print("Grade =", grade)
+>>>>>>> b79619e6758dcb622168dfbf88327f948437dd98
 
 
 
 
+<<<<<<< HEAD
 
 print ("ellen did something")
+=======
+print("End of Program")
+
+
+>>>>>>> b79619e6758dcb622168dfbf88327f948437dd98
