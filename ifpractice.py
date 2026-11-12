@@ -4,35 +4,23 @@ def get_marks():
 
 score = get_marks()
 
-if score >= 90:
-    grade = "A+"
+if not 0 <= score <= 100:
+    print("Score must be between 0 and 100.")
+elif score >= 90:
+    grade, remark = "A+", "Outstanding"
 elif score >= 80:
-    grade = "A"
+    grade, remark = "A", "Excellent"
 elif score >= 70:
-    grade = "B"
+    grade, remark = "B", "Very Good"
 elif score >= 65:
-    grade = "C+"
+    grade, remark = "C+", "Good"
 elif score >= 50:
-    grade = "D"
+    grade, remark = "D", "Satisfactory"
 elif score >= 40:
-    grade = "E"
+    grade, remark = "E", "Needs Improvement"
 else:
-<<<<<<< HEAD
-    print("Grade = D")
-=======
-    grade = "F"
+    grade, remark = "F", "Fail"
 
-print("Grade =", grade)
->>>>>>> b79619e6758dcb622168dfbf88327f948437dd98
-
-
-
-
-<<<<<<< HEAD
-
-print ("ellen did something")
-=======
-print("End of Program")
-
-
->>>>>>> b79619e6758dcb622168dfbf88327f948437dd98
+if 0 <= score <= 100:
+    print("Grade =", grade)
+    print("Remark =", remark)
